@@ -15,7 +15,7 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' # Your Device Tree Branch, make sure it's right.
         required: true
-        default: 'v3_11.0'
+        default: 'shrp_1'
       DEVICE_PATH:
         description: 'Specify your Device Path' # As is, just like your DEVICE_PATH in your BoardConfig.mk
         required: true
@@ -125,7 +125,7 @@ jobs:
       continue-on-error: true
       
     - name: Install Python 2
-      if: github.event.inputs.MANIFEST_BRANCH != 'twrp-11' && github.event.inputs.MANIFEST_BRANCH != 'twrp-12.1'
+      if: github.event.inputs.MANIFEST_BRANCH != 'v3_11.0' && github.event.inputs.MANIFEST_BRANCH != 'v3_11.0'
       run: |
         sudo apt -y install python2
         cd /usr/bin
