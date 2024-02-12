@@ -88,8 +88,8 @@ jobs:
       id: manifest
       with:
         cond: ${{ github.event.inputs.MANIFEST_BRANCH == 'v3_11.0' || github.event.inputs.MANIFEST_BRANCH == 'v3_10.0' }}
-        if_true: https://github.com/SHRP/manifest.git
-        if_false: https://github.com/SHRP/manifest.git
+        if_true: https://github.com/Sandeep2062/manifest.git
+        if_false: https://github.com/Sandeep2062/manifest.git
         
     - name: Initialize Repo
       run: |
